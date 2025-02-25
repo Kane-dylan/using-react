@@ -1,11 +1,13 @@
 import './App.css'
+import FAQ_page from './page/FAQ_page';
 import Landing from './page/Landing'
 
 function App() {
 
   return (
-    <div className="bg-[#0a0c1b]">
-      <Landing />
+    <div>
+      {/* <Landing /> */}
+      <FAQ_page/>
     </div>
   );
 }
