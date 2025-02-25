@@ -35,12 +35,8 @@ const Landing = () => {
         </div>
 
         {/* Right Side - Image with Overlay */}
-        <div className="md:w-2/3 relative">
-          <img
-            src="/src/images/image-header-desktop.jpg"
-            alt="Analytics team"
-            className="w-full h-full object-cover"
-          />
+        <div className="flex flex-col md:w-2/3 relative">
+          <div className="w-full h-64 md:h-full object-cover team-banner bg-cover flex-1 min-h-64"></div>
           <div className="absolute inset-0 bg-purple-600 mix-blend-multiply opacity-60"></div>
         </div>
       </div>

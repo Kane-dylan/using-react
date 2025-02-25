@@ -19,63 +19,95 @@ const Cooking = () => {
           </h2>
           <ol className="flex flex-col gap-2 text-[#726864]">
             <li className="font-medium">
-              •<span className="font-bold ml-5">Total</span>: Approximately 10
+              <span className="text-[#6c334b]">•</span>
+              <span className="font-bold ml-5">Total</span>: Approximately 10
               minutes
             </li>
             <li className="font-medium">
-              •<span className="font-bold ml-5">Preparation</span>: 5 minutes
+              <span className="text-[#6c334b]">•</span>
+              <span className="font-bold ml-5">Preparation</span>: 5 minutes
             </li>
             <li className="font-medium">
-              •<span className="font-bold ml-5">Cooking</span>: 5 minutes
+              <span className="text-[#6c334b]">•</span>
+              <span className="font-bold ml-5">Cooking</span>: 5 minutes
             </li>
           </ol>
         </div>
-        <div className="mt-8">
+        <div className="mt-8 mb-8">
           <h2 className="young-serif-regular text-[#78453a] text-3xl font-medium">
             Ingredients
           </h2>
-          <ul>
-            <li>• 2-3 large eggs</li>
-            <li>• Salt, to taste</li>
-            <li>• Pepper, to taste</li>
-            <li>• 1 tablespoon of butter or oil</li>
+          <ul className="font-medium mt-4 text-[#726864]">
             <li>
-              • Optional fillings: cheese,diced vegetables, cooked meats, herbs
+              <span className="text-[#78453a]">•</span>
+              <span className="ml-5">2-3 large eggs</span>
+            </li>
+            <li>
+              <span className="text-[#78453a]">•</span>
+              <span className="ml-5">Salt, to taste</span>
+            </li>
+            <li>
+              <span className="text-[#78453a]">•</span>
+              <span className="ml-5">Pepper, to taste</span>
+            </li>
+            <li>
+              <span className="text-[#78453a]">•</span>
+              <span className="ml-5">1 tablespoon of butter or oil</span>
+            </li>
+            <li>
+              <span className="text-[#78453a]">•</span>
+              <span className="ml-5">
+                Optional fillings: cheese,diced vegetables, cooked meats, herbs
+              </span>
             </li>
           </ul>
         </div>
-        <div>
-          <ol>
+        <hr />
+        <div className="mt-8 mb-8">
+          <h1 className="young-serif-regular text-[#78453a] text-3xl font-medium">
+            Instructions
+          </h1>
+          <ol className="text-[#726864] outfit">
             <li>
-              <span>Beat the eggs</span>: In a bowl, beat the eggs with a pinch
-              of salt and pepper until they are well mixed. You can add a
-              tablespoon of water or milk for a fluffier texture.
+              <span className="text-[#78453a]">1.</span>
+              <span className="font-extrabold">Beat the eggs</span>: In a bowl,
+              beat the eggs with a pinch of salt and pepper until they are well
+              mixed. You can add a tablespoon of water or milk for a fluffier
+              texture.
             </li>
             <li>
-              <span>Heat the pan</span>: Place a non-stick frying pan over
-              medium heat and add butter or oil.
+              <span className="text-[#78453a]">2.</span>
+              <span className="font-extrabold">Heat the pan</span>: Place a
+              non-stick frying pan over medium heat and add butter or oil.
             </li>
             <li>
-              <span>Cook the omelette</span>: Once the butter is melted and
-              bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly
-              coat the surface.
+              <span className="text-[#78453a]">3.</span>
+              <span className="font-extrabold">Cook the omelette</span>: Once
+              the butter is melted and bubbling, pour in the eggs. Tilt the pan
+              to ensure the eggs evenly coat the surface.
             </li>
             <li>
-              <span>Add fillings (optional)</span>: When the eggs begin to set
-              at the edges but are still slightly runny in the middle, sprinkle
-              your chosen fillings over one half of the omelette.
+              <span className="text-[#78453a]">4.</span>
+              <span className="font-extrabold">Add fillings (optional)</span>:
+              When the eggs begin to set at the edges but are still slightly
+              runny in the middle, sprinkle your chosen fillings over one half
+              of the omelette.
             </li>
             <li>
-              <span>Fold and serve</span>: As the omelette continues to cook,
-              carefully lift one edge and fold it over the fillings. Let it cook
-              for another minute, then slide it onto a plate.
+              <span className="text-[#78453a]">5.</span>
+              <span className="font-extrabold">Fold and serve</span>: As the
+              omelette continues to cook, carefully lift one edge and fold it
+              over the fillings. Let it cook for another minute, then slide it
+              onto a plate.
             </li>
             <li>
-              <span>Enjoy</span>: Serve hot, With additional salt and pepper if
-              needed.
+              <span className="text-[#78453a]">6.</span>
+              <span className="font-extrabold">Enjoy</span>: Serve hot, With
+              additional salt and pepper if needed.
             </li>
           </ol>
         </div>
+        <hr />
         <div>
           <h2>Nutrition</h2>
           <p>
