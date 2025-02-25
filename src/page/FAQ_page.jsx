@@ -4,14 +4,14 @@ const FAQ_page = () => {
   return (
     <div className="relative work-sans min-h-screen flex flex-col items-center justify-center bg-[#f9eeff]">
       {/* Banner Background */}
-      <div className="banner absolute top-0 left-0 w-full h-[40vh]"></div>
+      <div className="banner bg-cover absolute top-0 left-0 w-full h-[40vh]"></div>
 
       {/* FAQ Card */}
-      <div className="bg-white rounded-2xl p-8 max-w-2xl md:max-w-3xl relative z-10">
+      <div className="bg-white rounded-2xl p-10 m-10 max-w-lg md:max-w-xl relative z-10 ">
         {/* Header */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-5">
           <img src="/src/assets/images/icon-star.svg" alt="Star Icon" />
-          <h1 className="text-4xl font-extrabold text-[#1c042e]">FAQs</h1>
+          <h1 className="text-6xl font-bold text-[#1c042e]">FAQs</h1>
         </div>
 
         {/* FAQ Items */}
