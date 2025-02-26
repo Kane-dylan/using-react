@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <div className="min-h-10 bg-slate-700">
       <>
-        <nav className="flex justify-around items-center p-5">
+        <nav className="flex justify-around items-center p-5 sticky top-0">
           <Link to="/" className="flex items-start space-x-2">
             <img src="/src/images/favicon-32x32.png" alt="logo" />
           </Link>
