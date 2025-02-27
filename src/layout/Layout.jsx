@@ -6,7 +6,7 @@ import Footer from '../components/Footer';
 const Layout = () => {
   return (
     <div>
-      <main className="min-h-screen mx-auto">
+      <main className="min-h-screen mx-auto overflow-hidden-clip">                                            
         <Header/>
         <Outlet/>
         <Footer/>

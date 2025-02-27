@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className="min-h-10 mx-auto bg-slate-700">
+    <div className="min-h-10 mx-auto bg-slate-700 sticky bottom-0">
       <div className="text-white flex justify-center p-5 young-serif-regular text-2xl">
         &copy; copy right 2035
       </div>
