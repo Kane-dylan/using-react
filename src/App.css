@@ -35,3 +35,7 @@
 .omelette {
   background-image: url("/src/images/image-omelette.jpeg");
 }
+
+.logo {
+  background-image: url("/src/images/favicon-32x32.png");
+}

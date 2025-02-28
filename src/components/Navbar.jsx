@@ -1,88 +1,81 @@
-import { useState } from "react";
+import React from 'react'
+import { CiSearch } from "react-icons/ci";
+import { MdMenu } from "react-icons/md";
+import { PiShoppingCartThin } from "react-icons/pi";
+import ResponsiveMenu from './ResponsiveMenu';
+import { Link } from 'react-router-dom';
+import { Button } from './ui/button';
+
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+
+  const [isOpen, setIsOpen] = React.useState(false);
 
   return (
-    <nav className="bg-blue-600 text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16 items-center">
-          {/* Logo */}
-          <div className="text-2xl font-bold">MyLogo</div>
-
-          {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-6">
-            <a href="#" className="hover:text-gray-300">
-              Home
-            </a>
-            <a href="#" className="hover:text-gray-300">
-              About
-            </a>
-            <a href="#" className="hover:text-gray-300">
-              Services
-            </a>
-            <a href="#" className="hover:text-gray-300">
-              Contact
-            </a>
+    <>
+      <nav className="sticky top-0 z-50">
+        <div className="flex flex-row justify-between items-center bg-slate-700 text-white px-5 overflow-hidden">
+          {/* logo section */}
+          <Link to={"/"}>
+            <div className="flex items-center text-2xl gap-2 font-bold outfit py-8">
+              <img src="/src/images/favicon-32x32.png" alt="logo" />
+              <p>Faction</p>
+            </div>
+          </Link>
+          {/* Menu section */}
+          <div className="hidden md:flex justify-between items-center">
+            <ul className="flex flex-row space-x-5 ">
+              <li>
+                <Link to="/">
+                  <Button
+                    variant="ghost"
+                    className="sm:text-2xl hover:bg-slate-800 hover:text-white"
+                  >
+                    Home
+                  </Button>
+                </Link>
+              </li>
+              <li>
+                <Link to="/cooking">
+                  <Button
+                    variant="ghost"
+                    className="sm:text-2xl hover:bg-slate-800 hover:text-white"
+                  >
+                    Cooking
+                  </Button>
+                </Link>
+              </li>
+              <li>
+                <Link to="/faq">
+                  <Button
+                    variant="ghost"
+                    className="sm:text-2xl hover:bg-slate-800 hover:text-white"
+                  >
+                    FAQs
+                  </Button>
+                </Link>
+              </li>
+            </ul>
           </div>
-
-          {/* Mobile Menu Button */}
-          <button
-            className="md:hidden focus:outline-none"
-            onClick={() => setIsOpen(!isOpen)}
-          >
-            {isOpen ? (
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            ) : (
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
-            )}
-          </button>
+          {/* Icon section */}
+          <div className="hidden md:flex items-center gap-2 text-2xl outfit">
+            <button className="p-2 rounded-md hover:bg-slate-800">
+              <CiSearch size={35} />
+            </button>
+            <button className="p-2 rounded-md hover:bg-slate-800">
+              <PiShoppingCartThin />
+            </button>
+          </div>
+          {/* Mobile screen Menu section */}
+          <div className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
+            <MdMenu className="text-4xl" />
+          </div>
         </div>
-      </div>
-
-      {/* Mobile Menu */}
-      {isOpen && (
-        <div className="md:hidden bg-blue-600">
-          <a href="#" className="block py-2 px-4 text-center hover:bg-blue-700">
-            Home
-          </a>
-          <a href="#" className="block py-2 px-4 text-center hover:bg-blue-700">
-            About
-          </a>
-          <a href="#" className="block py-2 px-4 text-center hover:bg-blue-700">
-            Services
-          </a>
-          <a href="#" className="block py-2 px-4 text-center hover:bg-blue-700">
-            Contact
-          </a>
-        </div>
-      )}
-    </nav>
+      </nav>
+      {/* Mobile sidebar section */}
+      <ResponsiveMenu open={isOpen} />
+    </>
   );
-};
+}
 
-export default Navbar;
+export default Navbar
