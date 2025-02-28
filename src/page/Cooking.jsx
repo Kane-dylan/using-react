@@ -6,7 +6,7 @@ const Cooking = () => {
       <div className="max-w-4xl sm:p-10 lg:m-44 bg-white sm:rounded-3xl shadow-lg">
           <div className="omelette bg-cover bg-center relative w-full h-[40vh] sm:rounded-2xl"></div>
         <div className="sm:p-0 p-10">
-          <h1 className="text-4xl young-serif-regular mt-8">
+          <h1 className="text-4xl young-serif-regular mt-8">  
             Simple Omelette Recipe
           </h1>
           <p className="outfit text-[#9f9e9a] mt-4">
