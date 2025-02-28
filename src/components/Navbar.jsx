@@ -13,8 +13,8 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="sticky top-0 z-50">
-        <div className="flex flex-row justify-between items-center bg-slate-700 text-white px-5 overflow-hidden">
+      <nav className="sticky top-0 z-50 bg-transparent backdrop-blur-md transition-all duration-300 shadow-md">
+        <div className="flex flex-row justify-between items-center text-white px-5 overflow-hidden">
           {/* logo section */}
           <Link to={"/"}>
             <div className="flex items-center text-2xl gap-2 font-bold outfit py-8">
@@ -29,7 +29,7 @@ const Navbar = () => {
                 <Link to="/">
                   <Button
                     variant="ghost"
-                    className="sm:text-2xl hover:bg-slate-800 hover:text-white"
+                    className="sm:text-2xl hover:bg-slate-800 hover:text-white transition-all duration-300"
                   >
                     Home
                   </Button>
@@ -39,7 +39,7 @@ const Navbar = () => {
                 <Link to="/cooking">
                   <Button
                     variant="ghost"
-                    className="sm:text-2xl hover:bg-slate-800 hover:text-white"
+                    className="sm:text-2xl hover:bg-slate-800 hover:text-white transition-all duration-300"
                   >
                     Cooking
                   </Button>
@@ -49,7 +49,7 @@ const Navbar = () => {
                 <Link to="/faq">
                   <Button
                     variant="ghost"
-                    className="sm:text-2xl hover:bg-slate-800 hover:text-white"
+                    className="sm:text-2xl hover:bg-slate-800 hover:text-white transition-all duration-300"
                   >
                     FAQs
                   </Button>

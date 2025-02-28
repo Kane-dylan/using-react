@@ -7,7 +7,7 @@ import Navbar from '@/components/Navbar';
 const Layout = () => {
   return (
     <div>
-      <main className="min-h-screen mx-auto overflow-hidden-clip">                                            
+      <main className="min-h-screen mx-auto overflow-hidden-clip bg-black">                                            
         {/* <Header/> */}
         <Navbar/>
         <Outlet/>
