@@ -1,14 +1,14 @@
-import React from 'react'
+import React from "react";
 import { CiSearch } from "react-icons/ci";
 import { MdMenu } from "react-icons/md";
 import { PiShoppingCartThin } from "react-icons/pi";
-import ResponsiveMenu from './ResponsiveMenu';
-import { Link } from 'react-router-dom';
-import { Button } from './ui/button';
-
+import ResponsiveMenu from "./ResponsiveMenu";
+import { Link } from "react-router-dom";
+import { Button } from "./ui/button";
+import { RxCross2 } from "react-icons/rx";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
-
   const [isOpen, setIsOpen] = React.useState(false);
 
   return (
@@ -63,12 +63,22 @@ const Navbar = () => {
               <CiSearch size={35} />
             </button>
             <button className="p-2 rounded-md hover:bg-slate-800">
-              <PiShoppingCartThin />
+              <PiShoppingCartThin size={35} />
             </button>
           </div>
           {/* Mobile screen Menu section */}
           <div className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
-            <MdMenu className="text-4xl" />
+            <motion.div
+              initial={{ rotate: 0 }}
+              animate={{ rotate: isOpen ? 180 : 0 }}
+              transition={{ duration: 0.5 }}
+            >
+              {isOpen ? (
+                <RxCross2 className="text-4xl" />
+              ) : (
+                <MdMenu className="text-4xl" />
+              )}
+            </motion.div>
           </div>
         </div>
       </nav>
@@ -76,6 +86,6 @@ const Navbar = () => {
       <ResponsiveMenu open={isOpen} />
     </>
   );
-}
+};
 
-export default Navbar
+export default Navbar;

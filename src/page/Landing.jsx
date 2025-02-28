@@ -5,7 +5,7 @@ const Landing = () => {
     <div className="min-h-screen flex items-center justify-center bg-[#0a0a16] px-6">
       <div className="flex flex-col-reverse md:flex-row bg-[#1c1938] rounded-lg overflow-hidden w-full max-w-4xl md:max-w-6xl">
         {/* Left Side */}
-        <div className="p-16 flex flex-col justify-center text-white md:w-2/3 text-center md:text-left">
+        <div className="p-16 flex flex-col justify-center text-white md:w-1/2 text-center md:text-left">
           <h1 className="text-4xl font-semibold">
             Get <span className="text-[#9b63c5]">insights</span> that help{" "}
             <br className="hidden md:block" />
@@ -33,9 +33,8 @@ const Landing = () => {
             </div>
           </div>
         </div>
-
-        {/* Right Side - Image with Overlay */}
-        <div className="flex flex-col md:w-2/3 relative">
+        {/* Right Side - Image with Overlay */}ī{" "}
+        <div className="flex flex-col md:w-1/2 relative">
           <div className="w-full h-64 md:h-full object-cover team-banner bg-cover flex-1 min-h-64"></div>
           <div className="absolute inset-0 bg-purple-600 mix-blend-multiply opacity-60"></div>
         </div>
